@@ -1,0 +1,150 @@
+.delivery {
+	padding-top: 214px;
+	padding-bottom: 214px;
+	@media screen and (max-width: 992px) {
+		padding-top: 80px;
+	}
+	&__container {
+	}
+
+	&__inner {
+		@media screen and (max-width: 992px) {
+		}
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		grid-column: 4 span;
+
+		@media screen and (max-width: 992px) {
+			grid-column: 10 span;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__info {
+		max-width: 442px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		max-width: 386px;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 16px;
+		}
+		@media screen and (max-width: 575px) {
+			max-width: 190px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		color: rgba(0, 0, 0, 0.7);
+		@media screen and (max-width: 575px) {
+			font-size: 16px;
+		}
+	}
+
+	&__preview {
+		@media screen and (max-width: 992px) {
+			display: none;
+		}
+	}
+
+	&__preview-title {
+		max-width: 270px;
+		margin-bottom: 30px;
+
+		font-weight: 700;
+		font-size: 22px;
+		color: #000;
+	}
+
+	&__right {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+
+		grid-column: 6 span;
+
+		@media screen and (max-width: 992px) {
+			grid-column: 10 span;
+		}
+		@media screen and (max-width: 575px) {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+.download-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 20px 50px;
+	border-radius: 500px;
+	background-color: var(--orange);
+
+	font-weight: 600;
+	font-size: 18px;
+	color: var(--white);
+
+	transition: background-color 0.2s ease-in-out;
+
+	@include hover {
+		background-color: var(--pink);
+	}
+
+	&:active {
+		scale: 0.97;
+		background-color: var(--pink);
+	}
+}
+
+.category-card {
+	position: relative;
+	padding: 20px;
+	border-radius: 20px;
+	background: #f8f8f8;
+	min-height: 304px;
+
+	@media screen and (max-width: 575px) {
+		background-color: var(--green-b2b);
+	}
+
+	.tooltip__btn {
+		opacity: 0.3;
+		transition: opacity 0.2s ease-in-out;
+	}
+
+	.tooltip__btn:hover {
+		opacity: 1;
+	}
+
+	&__top {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		color: var(--black-green);
+		@media screen and (max-width: 575px) {
+			font-size: 20px;
+			color: var(--white);
+		}
+	}
+
+	&__img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
