@@ -134,3 +134,21 @@ ourMealsNavs?.forEach(btn => {
 		});
 	});
 });
+
+ourMealsTabs?.forEach((tab, index) => {
+	const slider = tab.querySelector('.swiper');
+	new Swiper(slider, {
+		slidesPerView: 1,
+
+		breakpoints: {
+			376: {
+				slidesPerView: 'auto',
+			},
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+});
