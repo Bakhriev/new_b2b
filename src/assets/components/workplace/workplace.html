@@ -12,10 +12,59 @@
 						<span class="text-green-hover">на рабочем месте</span>
 					</h2>
 				</div>
+				<div class="workplace__text-boxes">
+					<div class="text-box">
+						<img class="text-box__img" src="./assets/img/text-box.png" alt="" />
+						<p>
+							<span class="text-green-hover font-bold"
+								>Из духовки к столу: </span
+							>порадуйте себя ароматным горячим обедом, доставленным вовремя —
+							прямо в офис
+						</p>
+						<div class="text-box__time">
+							<span>13:30</span>
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#check-double"></use>
+							</svg>
+						</div>
+					</div>
+
+					<div class="text-box">
+						<img class="text-box__img" src="./assets/img/text-box.png" alt="" />
+						<p>
+							<span class="text-green-hover font-bold"
+								>Чистота и свежесть:
+							</span>
+							гарантируем качество и свежесть продуктов, благодаря нашему
+							собственному производству
+						</p>
+						<div class="text-box__time">
+							<span>13:30</span>
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#check-double"></use>
+							</svg>
+						</div>
+					</div>
+
+					<div class="text-box">
+						<img class="text-box__img" src="./assets/img/text-box.png" alt="" />
+						<p>
+							<span class="text-green-hover font-bold">Экономия времени: </span>
+							забудьте о необходимости быстро сбегать за едой - мы привезем ее
+							без хлопот и ожиданий
+						</p>
+						<div class="text-box__time">
+							<span>13:30</span>
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#check-double"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
 
 				<form action="#" class="form-menu" name="form-menu">
-					<div class="form__title">Скачать пример меню на неделю:</div>
-					<div class="form__fields">
+					<div class="form-menu__title">Скачать пример меню на неделю:</div>
+					<div class="form-menu__fields">
 						<input
 							type="text"
 							class="input input-reset form-menu__name"
@@ -23,9 +72,14 @@
 							placeholder="Ваше имя" />
 
 						<div class="input-wrapper">
+							<img
+								class="input-wrapper__icon"
+								src="./assets/img/ru.png"
+								alt="" />
 							<input
 								type="text"
-								class="input input-reset form-menu__number"
+								id="form-menu-phone"
+								class="input input-reset input-number form-menu__number"
 								placeholder="(999)999-99-99" />
 						</div>
 
@@ -36,19 +90,21 @@
 							</svg>
 						</a>
 					</div>
-					<p class="form__privacy">
+					<p class="form-menu__privacy">
 						Нажимая кнопку “Скачать PDF” вы соглашаетесь на обработку
 						персональных данных в соответствии с
-						<span class="underline">политикой конфиденциальности</span>
+						<a href="#" class="underline">политикой конфиденциальности</a>
 					</p>
 				</form>
 			</div>
 
 			<div class="workplace__right">
 				<div class="text-box">
+					<img class="text-box__img" src="./assets/img/text-box.png" alt="" />
 					<p>
-						<span class="text-green-hover">Из духовки к столу: </span>порадуйте
-						себя ароматным горячим обедом, доставленным вовремя — прямо в офис
+						<span class="text-green-hover font-bold">Из духовки к столу: </span
+						>порадуйте себя ароматным горячим обедом, доставленным вовремя —
+						прямо в офис
 					</p>
 					<div class="text-box__time">
 						<span>13:30</span>
@@ -59,8 +115,9 @@
 				</div>
 
 				<div class="text-box">
+					<img class="text-box__img" src="./assets/img/text-box.png" alt="" />
 					<p>
-						<span class="text-green-hover">Чистота и свежесть: </span>
+						<span class="text-green-hover font-bold">Чистота и свежесть: </span>
 						гарантируем качество и свежесть продуктов, благодаря нашему
 						собственному производству
 					</p>
@@ -73,8 +130,9 @@
 				</div>
 
 				<div class="text-box">
+					<img class="text-box__img" src="./assets/img/text-box.png" alt="" />
 					<p>
-						<span class="text-green-hover">Экономия времени: </span>
+						<span class="text-green-hover font-bold">Экономия времени: </span>
 						забудьте о необходимости быстро сбегать за едой - мы привезем ее без
 						хлопот и ожиданий
 					</p>
@@ -86,6 +144,8 @@
 					</div>
 				</div>
 			</div>
+
+			<img src="./assets/img/workplace-pc.png" alt="" class="workplace__img" />
 		</div>
 	</div>
 </section>

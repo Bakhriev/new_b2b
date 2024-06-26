@@ -49,3 +49,11 @@ const swiper = new Swiper('.daily-ration__slider', {
 		el: '.swiper-scrollbar',
 	},
 });
+
+const element = document.getElementById('form-menu-phone');
+const maskOptions = {
+	mask: '+7(000)000-00-00',
+	lazy: true,
+};
+
+const mask = new IMask(element, maskOptions);
