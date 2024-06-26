@@ -1,0 +1,146 @@
+.footer {
+	padding: 80px 0;
+	&__container {
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__left {
+		padding-right: 90px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border-right: 1px solid #282828;
+	}
+
+	&__our {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+
+		font-size: 14px;
+	}
+
+	&__link {
+		transition: color 0.2s ease-in-out;
+		@include hover {
+			color: var(--orange);
+		}
+		&:active {
+			color: var(--orange);
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__phone-link {
+		@include hover {
+			background-color: transparent;
+			color: var(--orange);
+			transition: color 0.2s ease-in-out;
+			span {
+				color: var(--orange);
+			}
+		}
+		&:active {
+			background-color: transparent;
+			color: var(--orange);
+			transition: color 0.2s ease-in-out;
+			span {
+				color: var(--orange);
+			}
+		}
+		span {
+			transition: color 0.2s ease-in-out;
+			font-size: 18px;
+			font-weight: 400;
+			&:last-child {
+				font-size: 14px;
+				color: rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+
+	&__item-title {
+		margin-bottom: 47px;
+		font-weight: 700;
+		font-size: 22px;
+		color: #282828;
+	}
+
+	&__list {
+		margin-bottom: 72px;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	&__list-link {
+		font-size: 18px;
+		text-decoration: underline;
+		transition: color 0.2s ease-in-out;
+		@include hover {
+			color: var(--orange);
+		}
+		&:active {
+			color: var(--orange);
+		}
+	}
+
+	&__email {
+		transition: color 0.2s ease-in-out;
+		@include hover {
+			color: var(--orange);
+		}
+		&:active {
+			color: var(--orange);
+		}
+	}
+
+	&__socials {
+		margin-top: auto;
+	}
+}
+.container {
+}
+.logo {
+}
+.underline {
+}
+.list-reset {
+}
+
+.font-semibold {
+}
+.socials {
+	display: flex;
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid var(--orange);
+		width: 40px;
+		height: 40px;
+		fill: var(--orange);
+
+		transition:
+			border-color 0.2s ease-in-out,
+			fill 0.2s ease-in-out;
+
+		@include hover {
+			border-color: var(--red);
+			fill: var(--red);
+		}
+
+		&:active {
+			border-color: var(--red);
+			fill: var(--red);
+		}
+	}
+}
