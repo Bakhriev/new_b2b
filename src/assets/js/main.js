@@ -116,3 +116,21 @@ new TransferElements({
 		},
 	},
 });
+
+const ourMealsNavs = document.querySelectorAll('.meals-gallery__btn');
+const ourMealsTabs = document.querySelectorAll('.meals-gallery__tab');
+
+ourMealsNavs?.forEach(btn => {
+	btn.addEventListener('click', () => {
+		ourMealsNavs.forEach(btn => btn.classList.remove('active'));
+		btn.classList.add('active');
+
+		ourMealsTabs.forEach(tab => {
+			tab.classList.remove('active');
+
+			if (btn.dataset.id === tab.dataset.id) {
+				tab.classList.add('active');
+			}
+		});
+	});
+});
