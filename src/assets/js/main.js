@@ -22,7 +22,17 @@ overlay.addEventListener('click', () => {
 	mobileMenu.classList.remove('active');
 });
 
-const swiper = new Swiper('.daily-ration__slider', {
+const element = document.getElementById('form-menu-phone');
+const element2 = document.getElementById('form-menu-phone-2');
+const maskOptions = {
+	mask: '+7(000)000-00-00',
+	lazy: true,
+};
+
+const mask = new IMask(element, maskOptions);
+const mask2 = new IMask(element2, maskOptions);
+
+const SDailyRation = new Swiper('.daily-ration__slider', {
 	slidesPerView: 2,
 	slidesPerGroup: 2,
 	spaceBetween: 20,
@@ -35,25 +45,74 @@ const swiper = new Swiper('.daily-ration__slider', {
 	},
 
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.daily-ration__slider-controls .swiper-pagination',
 	},
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
-	// And if we need scrollbar
-	scrollbar: {
-		el: '.swiper-scrollbar',
+		nextEl: '.daily-ration__slider-controls .swiper-button-next',
+		prevEl: '.daily-ration__slider-controls .swiper-button-prev',
 	},
 });
 
-const element = document.getElementById('form-menu-phone');
-const maskOptions = {
-	mask: '+7(000)000-00-00',
-	lazy: true,
-};
+const SWork = new Swiper('.work__slider', {
+	effect: 'coverflow',
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 130,
+		depth: 600,
+		modifier: 1,
+		slideShadows: false,
+	},
 
-const mask = new IMask(element, maskOptions);
+	breakpoints: {
+		575: {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			coverflowEffect: {
+				rotate: 0,
+				stretch: 300,
+				depth: 1400,
+				modifier: 1,
+				slideShadows: false,
+			},
+		},
+		992: {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			coverflowEffect: {
+				rotate: 0,
+				stretch: 200,
+				depth: 1400,
+				modifier: 1,
+				slideShadows: false,
+			},
+		},
+	},
+
+	pagination: {
+		el: '.work__slider-controls .swiper-pagination',
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.work__slider-controls .swiper-button-next',
+		prevEl: '.work__slider-controls .swiper-button-prev',
+	},
+});
+
+new TransferElements({
+	sourceElement: document.querySelector('.work__slider-wrapper'),
+	breakpoints: {
+		992: {
+			targetElement: document.querySelector('.work__mob-slider-wrapper'),
+		},
+	},
+});
