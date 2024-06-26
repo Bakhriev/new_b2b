@@ -24,6 +24,7 @@ overlay.addEventListener('click', () => {
 
 const element = document.getElementById('form-menu-phone');
 const element2 = document.getElementById('form-menu-phone-2');
+const element3 = document.getElementById('form-menu-phone-3');
 const maskOptions = {
 	mask: '+7(000)000-00-00',
 	lazy: true,
@@ -31,6 +32,7 @@ const maskOptions = {
 
 const mask = new IMask(element, maskOptions);
 const mask2 = new IMask(element2, maskOptions);
+const mask3 = new IMask(element3, maskOptions);
 
 const SDailyRation = new Swiper('.daily-ration__slider', {
 	slidesPerView: 2,
