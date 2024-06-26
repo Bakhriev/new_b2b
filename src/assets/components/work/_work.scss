@@ -39,6 +39,13 @@
 	&__inner {
 	}
 
+	&__mob-slider-wrapper {
+		display: none;
+		@media screen and (max-width: 992px) {
+			display: block;
+		}
+	}
+
 	&__left {
 		grid-column: 4 span;
 		max-width: 500px;
