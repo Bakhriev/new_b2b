@@ -119,6 +119,15 @@ new TransferElements({
 	},
 });
 
+new TransferElements({
+	sourceElement: document.querySelector('.footer__phone-link'),
+	breakpoints: {
+		992: {
+			targetElement: document.querySelector('.footer__mail-wrapper'),
+		},
+	},
+});
+
 const ourMealsNavs = document.querySelectorAll('.meals-gallery__btn');
 const ourMealsTabs = document.querySelectorAll('.meals-gallery__tab');
 

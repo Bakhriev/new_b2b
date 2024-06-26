@@ -1,16 +1,20 @@
 .about {
-	padding: 160px 0;
-	padding-bottom: 275px;
 	position: relative;
 	background-color: #fff;
+	padding-top: 120px;
+	padding-bottom: 260px;
+
+	@media screen and (max-width: 375px) {
+		padding-bottom: 431px;
+	}
 
 	&::before {
 		content: '';
 		position: absolute;
 		top: 0;
 		left: 50%;
-		top: 60px;
 		transform: translateX(-50%);
+
 		width: 1860px;
 		height: 1067px;
 
@@ -18,17 +22,15 @@
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
+
 		@media screen and (max-width: 1400px) {
-			width: 100%;
-			height: 1100px;
+			height: 1150px;
 		}
-		@media screen and (max-width: 575px) {
-			height: 1300px;
-		}
+
 		@media screen and (max-width: 375px) {
 			background-image: url('../img/about-bg-mob.png');
 			width: 100%;
-			height: 1545px;
+			height: 1424px;
 		}
 	}
 
@@ -56,6 +58,10 @@
 
 	&__our-advantages {
 		margin-bottom: 30px;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 24px;
+			gap: 8px;
+		}
 		.our-advantages__item {
 			@media screen and (max-width: 575px) {
 				font-size: 14px;
@@ -77,6 +83,11 @@
 				.form-menu__name {
 					max-width: 100%;
 				}
+			}
+		}
+		.form__privacy {
+			@media screen and (max-width: 575px) {
+				font-size: 11px;
 			}
 		}
 	}

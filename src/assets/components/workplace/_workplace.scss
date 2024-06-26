@@ -1,7 +1,8 @@
 .workplace {
 	position: relative;
 	padding: 224px 0;
-	background-image: url('../img/svg/workplace-decor.svg');
+
+	background-image: url('../img/workplace-bg.png');
 
 	background-position: center center;
 	background-size: cover;
@@ -117,9 +118,11 @@
 		font-weight: 700;
 		font-size: 22px;
 		color: #000;
+
 		@media screen and (max-width: 992px) {
 			margin-bottom: 24px;
 		}
+
 		@media screen and (max-width: 575px) {
 			font-size: 20px;
 		}
@@ -234,9 +237,7 @@
 }
 .text-box {
 	padding: 20px 50px 20px 50px;
-	@media screen and (max-width: 575px) {
-		padding: 15px 43px 15px 23px;
-	}
+
 	border-radius: 100px;
 
 	position: relative;
@@ -248,13 +249,16 @@
 	font-size: 16px;
 	line-height: 1.375;
 	color: var(--black-green);
+
 	@media screen and (max-width: 575px) {
+		padding: 15px 43px 15px 23px;
 		font-size: 11px;
 	}
+
 	&__time {
 		margin-left: auto;
 		@media screen and (max-width: 575px) {
-			font-size: 6px;
+			font-size: 10px;
 			svg {
 				width: 12px;
 				height: 12px;
