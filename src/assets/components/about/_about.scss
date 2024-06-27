@@ -2,7 +2,11 @@
 	position: relative;
 	background-color: #fff;
 	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-bottom: 260px;
+
+	@media screen and (max-width: 1200px) {
+		padding-bottom: 120px;
+	}
 
 	@media screen and (max-width: 375px) {
 		padding-bottom: 431px;

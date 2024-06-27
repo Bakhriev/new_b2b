@@ -9,10 +9,13 @@
 	background-repeat: no-repeat;
 
 	@media screen and (max-width: 992px) {
+		background-color: #cbec52;
+		background-image: url('');
+		padding: 80px 0;
 	}
 
-	@media screen and (max-width: 375px) {
-		padding: 80px 0;
+	@media screen and (max-width: 575px) {
+		background-color: transparent;
 		background-image: url('../img/svg/workplace-decor-mob.svg');
 	}
 
