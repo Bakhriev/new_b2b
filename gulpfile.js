@@ -177,7 +177,7 @@ function cssMin() {
 }
 
 function jsMin() {
-	return src(path.src.js).pipe(uglify()).pipe(dest(path.build.js));
+	return src(path.src.js).pipe(dest(path.build.js));
 }
 
 function clean() {
